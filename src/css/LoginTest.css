@@ -6,7 +6,6 @@
     flex-direction: column;
   
     align-items: center;
-    border: 1px solid black;
     height: 700px;
     max-width: 500px;
     padding: 100px 0;
@@ -28,8 +27,17 @@
   .input_id:focus,
   .input_password:focus {
     border: 2px solid blue;
-    padding: 5px 8px;
+    padding: 5px 11px;
     height: 50px;
+  }
+
+  .horizontal_first {
+    width: 60%;
+    text-align: center;
+  
+    border-bottom: 1px solid rgb(41, 197, 119);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
   }
 
   .horizontal {
@@ -50,3 +58,20 @@
     height: 50px;
 }
 
+.join_us{
+  display: flex;
+  justify-content: center;
+}
+
+.join_us p{
+  position: relative;
+  right: 60px;
+}
+
+.join_us a{
+  position: relative;
+  left: 60px;
+
+  text-decoration: none;
+  color: green;
+}

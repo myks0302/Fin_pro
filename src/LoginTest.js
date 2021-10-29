@@ -18,7 +18,7 @@ export default function LoginTest(){
           clientId:"GFRk_SJiZVzSpToWr01V",
           callbackUrl:"http://localhost:3000/#/", 
           isPopup: false, // popup 형식으로 띄울것인지 설정
-          loginButton: { color: 'green', type: 3, height: '70' }, //버튼의 스타일, 타입, 크기를 지정
+          loginButton: { color: 'green', type: 3, height: '93' }, //버튼의 스타일, 타입, 크기를 지정
         });
         naverLogin.init();
     };
@@ -78,8 +78,9 @@ export default function LoginTest(){
                     <div className="loginform">
                         <h1>국비위키</h1>
                         
+                        <div className="horizontal_first" />
+                        
                         <Form onSubmit={onSubmit}>
-                            <div className="horizontal" />
 
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>ID</Form.Label>
@@ -104,9 +105,19 @@ export default function LoginTest(){
                                 </div>
                             </div>
                         </Form>
-                            
+                       
                         <div id="naverIdLogin" ></div>
-                        
+                       
+
+                        <div className="horizontal">
+                        </div>
+
+                        <div className="join_us">
+                            <p>아직 회원이 아니세요?</p>
+                            
+                            <a href="">회원가입</a>             
+                        </div>
+
                     </div>
 
             }

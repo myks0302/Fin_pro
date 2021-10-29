@@ -1,0 +1,52 @@
+.loginform {
+    margin: 0 auto;
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    border: 1px solid black;
+    height: 700px;
+    max-width: 500px;
+    padding: 100px 0;
+
+    position: relative;
+    top: 120px;
+  }
+
+  
+  .input_id,
+  .input_password {
+    width: 434px;
+    height: 50px;
+    padding: 5px 12px;
+    outline: none;
+    border: 1px solid black;
+  }
+  
+  .input_id:focus,
+  .input_password:focus {
+    border: 2px solid blue;
+    padding: 5px 8px;
+    height: 50px;
+  }
+
+  .horizontal {
+    width: 100%;
+    text-align: center;
+  
+    border-bottom: 1px solid rgb(41, 197, 119);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+  }
+  .horizontal span {
+    background-color: white;
+    padding: 0 10px;
+}
+
+.naverid{
+    width: 434px;
+    height: 50px;
+}
+

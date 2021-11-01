@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { Redirect } from "react-router";
 
+//import {Form, Button} from 'react-bootstrap'; 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/JoinTest.css"
+
 
 export default function JoinTest(){
   const [user,setUser] = useState({userId:'',userPassword:''});
@@ -84,17 +88,31 @@ export default function JoinTest(){
     {joinCheck ? 
       <Redirect to="/"></Redirect>
     :
-    <>
-      <h3>회원가입</h3>
-      <form onSubmit={onSubmit}>
-        아이디
-        <input type = "text" name="id" onChange={onChange} onBlur={idCheck}></input>
-        {message.text !== '' ? <p style={{fontSize:14 ,color:`${message.color}`}}>{message.text}</p> : <p></p>}
-        비밀번호
-        <input type = "password" name="password" onChange={onChange}></input><br/>
+    <div className="joinBox">
+      <h2>국비 위키</h2>
+
+      
+      <form onSubmit={onSubmit}>  
+        <h4>회원가입</h4>
+        
+        <input type = "text" name="id" onChange={onChange} onBlur={idCheck} placeholder="이메일 주소"></input><br/>
+        <input type = "text" name="email_check" placeholder="이메일 인증 번호"></input><br/>
+        <input type = "text" name="nickname" placeholder="닉네임"></input><br/>        
+        <input type = "password" name="password" onChange={onChange} placeholder="비밀번호"></input><br/>
+        <input type = "password" name="password_check" placeholder="비밀번호 확인"></input><br/>
+        <input type = "text" name="name" placeholder="실명"></input><br/>
+
         <input type = "submit" value="join" />
       </form>
-    </>
+
+      <div className="horizontal"></div>
+
+      <div className="login">
+        <p>이미 회원이세요?</p>
+                            
+        <a href="">로그인</a>             
+      </div>
+    </div>
     }  
     </>
   );

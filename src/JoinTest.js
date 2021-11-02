@@ -4,7 +4,7 @@ import { Redirect } from "react-router";
 
 //import {Form, Button} from 'react-bootstrap'; 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/JoinTest.css"
+import styles from "./css/JoinTest.module.css"
 
 
 export default function JoinTest(){
@@ -88,7 +88,7 @@ export default function JoinTest(){
     {joinCheck ? 
       <Redirect to="/"></Redirect>
     :
-    <div className="joinBox">
+    <div className={styles.joinBox}>
       <h2>국비 위키</h2>
 
       
@@ -105,9 +105,9 @@ export default function JoinTest(){
         <input type = "submit" value="join" />
       </form>
 
-      <div className="horizontal"></div>
+      <div className={styles.horizontal}></div>
 
-      <div className="login">
+      <div className={styles.login}>
         <p>이미 회원이세요?</p>
                             
         <a href="">로그인</a>             

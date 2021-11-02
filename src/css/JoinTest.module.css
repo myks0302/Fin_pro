@@ -21,21 +21,21 @@
   }
 
 
-h2{
+  .joinBox h2{
     position: relative;
     bottom: 40px;
 }
 
 
-form{
+.joinBox form{
     text-align: center;
 }
 
-form h4{
+.joinBox form h4{
     margin-bottom: 30px;
 }
 
-input{
+.joinBox input{
     margin-bottom: 20px;
     width: 300px;
     height: 30px;
@@ -44,13 +44,13 @@ input{
     border: 1px solid black;
 }
 
-input:focus{
+.joinBox input:focus{
     border: 2px solid blue;
     padding: 5px 11px;
-    height: 50px;
+    height: 30px;
 }
 
-input[type=submit]{
+.joinBox input[type=submit]{
     margin-bottom: 20px;
     width: 325px;
     height: 40px;
@@ -62,7 +62,7 @@ input[type=submit]{
     color: white;
 }
 
-.horizontal {
+.joinBox .horizontal {
     width: 100%;
     text-align: center;
   
@@ -71,17 +71,17 @@ input[type=submit]{
     margin: 10px 0 20px;
   }
 
-  .login{
+  .joinBox .login{
     display: flex;
     justify-content: center;
   }
   
-  .login p{
+  .joinBox .login p{
     position: relative;
     right: 60px;
   }
   
-  .login a{
+  .joinBox .login a{
     position: relative;
     left: 60px;
   

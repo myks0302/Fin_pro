@@ -1,90 +1,103 @@
 .joinBox {
-    margin: 0 auto;
-    box-sizing: border-box;
-  
-    display: flex;
-    flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 950px;
+  max-width: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  top: 90px;
 
-    align-items: center;
-    height: 675px;
-    max-width: 500px;
-    padding: 100px 0;
-    
-    box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 10px;
-
-    position: relative;
-    top: 120px;
-
-    box-shadow: 5px 5px rgba(0, 0, 0, .7);;
-  }
-
-
-  .joinBox h2{
-    position: relative;
-    bottom: 40px;
+  box-shadow: 2px 2px 5px;
 }
 
-
-.joinBox form{
-    text-align: center;
+.joinBox h2 {
+  position: relative;
+  bottom: 40px;
 }
 
-.joinBox form h4{
-    margin-bottom: 30px;
+.joinBox form {
+  text-align: center;
 }
 
-.joinBox input{
-    margin-bottom: 20px;
-    width: 300px;
-    height: 30px;
-    padding: 5px 12px;
-    outline: none;
-    border: 1px solid black;
+.joinBox form h4 {
+  margin-bottom: 30px;
 }
 
-.joinBox input:focus{
-    border: 2px solid blue;
-    padding: 5px 11px;
-    height: 30px;
+.joinBox input {
+  margin-bottom: 20px;
+  width: 434px;
+  height: 50px;
+  padding: 5px 12px;
+  outline: none;
+  border: 1px solid black;
 }
 
-.joinBox input[type=submit]{
-    margin-bottom: 20px;
-    width: 325px;
-    height: 40px;
-    padding: 5px 12px;
-    outline: none;
-    border: 1px solid black;
+.joinBox input:focus {
+  border: 2px solid blue;
+  padding: 5px 11px;
+  height: 50px;
+}
 
-    background-color: green;
-    color: white;
+.joinBox input[type="submit"] {
+  margin: 20px 0 40px;
+  width: 434px;
+  height: 60px;
+  padding: 5px 12px;
+  outline: none;
+  border: 0px solid black;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: green;
+  color: white;
+}
+.joinBox input[type="submit"]:hover {
+  background-color: rgb(38, 95, 58);
 }
 
 .joinBox .horizontal {
-    width: 100%;
-    text-align: center;
-  
-    border-bottom: 1px solid black;
-    line-height: 0.1em;
-    margin: 10px 0 20px;
-  }
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
 
-  .joinBox .login{
-    display: flex;
-    justify-content: center;
-  }
-  
-  .joinBox .login p{
-    position: relative;
-    right: 60px;
-  }
-  
-  .joinBox .login a{
-    position: relative;
-    left: 60px;
-  
-    text-decoration: none;
-    color: green;
-  }
+.joinlast {
+  margin-top: 10px;
+}
+.joinlast span a {
+  color: rgb(43, 86, 226);
+  font-weight: 900;
+  text-decoration: none;
+}
+.joinlast span::before {
+  margin: 50px;
+  content: "";
+}
+
+.joinBox input:nth-child(1) {
+  width: 334px;
+  display: inline;
+}
+
+.joinBox .check {
+  display: inline;
+  color: aquamarine;
+  background-color: bisques;
+}
+
+.joinBox input[type="submit"]:nth-child(2) {
+  width: 95px;
+  font-size: 12px;
+  font-weight: normal;
+  height: 50px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  border: 0px solid black;
+  top: -1.5px;
+  position: relative;
+}
